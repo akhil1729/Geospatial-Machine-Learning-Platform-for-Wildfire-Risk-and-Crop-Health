@@ -26,8 +26,7 @@ By harmonizing data from multiple satellite constellations (VIIRS, SMAP, ERA5) a
 1.  **Wildfire Segmentation:** A U-Net Computer Vision model that detects active fire fronts through smoke using thermal sensor data.
 2.  **Drought Forecasting:** An LSTM Time-Series model that predicts soil moisture levels to warn of agricultural stress.
 
-![Fire Prediction Overlay](images/fig7_fire_prediction_overlay.jpg)
-*Figure: AI-Assisted Fire Mapping overlaying predicted fire perimeter on raw thermal sensor data.*
+
 
 ---
 
@@ -53,16 +52,13 @@ We built a custom ingestion engine to handle complex scientific formats (`NetCDF
 * **Input:** 3-Channel Thermal Stack (T4 Brightness Temp, Fire Radiative Power, T5 Background Temp).
 * **Performance:** Achieved **~100% Intersection-over-Union (IoU)** on validation sets.
 
-![U-Net Segmentation Results](images/fig1_unet_segmentation_results.jpg)
-*Figure: U-Net model successfully isolating the active fire front from background heat.*
 
 ### 2. Drought Forecasting (LSTM)
 * **Objective:** Predict localized soil moisture content ($cm^3/cm^3$) for the next day ($t+1$).
 * **Approach:** Long Short-Term Memory (LSTM) network to capture non-linear temporal dynamics of soil drying and re-wetting.
 * **Performance:** Validation loss of **0.0024** (Mean Squared Error), effectively capturing seasonal trends.
 
-![LSTM Time Series Forecast](images/fig3_lstm_forecast_timeseries.jpg)
-*Figure: LSTM predictions (Red) tracking actual SMAP satellite readings (Blue).*
+
 
 ---
 
