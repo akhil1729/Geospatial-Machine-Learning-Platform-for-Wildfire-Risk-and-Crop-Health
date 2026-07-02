@@ -1,5 +1,3 @@
-# UMBC-DATA606-Capstone
-
 # Geospatial Machine Learning Platform for Wildfire Risk Assessment and Crop Health Monitoring
 
 **Authors:** Akhil Kanukula
